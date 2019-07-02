@@ -16,8 +16,8 @@ const upload = multer({ storage: storage });
 
 const azure = require("azure-storage");
 const blobService = azure.createBlobService(
-  "dwirandyhstorage",
-  "BroTUHppCPOC5DKxC+hMFxFoYxGJu9hR4s3JEwcRxXO7UtKoFcLT4npIk5LkHuDF0pYkAx6+WKrE7X7CZfvOQQ=="
+  "dwirandymacdstorage",
+  "1pRZ34ek3JmzXhhlcLKVvnEEFrs5+DckONxZ5lS6EPk3zt8Au/clcVyvQqfF91lTVBGcK2KqEQ8MJuO8Q8Rxfg=="
 );
 
 const containerName = "macdsubmission";
