@@ -8,7 +8,7 @@ const storage = multer.diskStorage({
     cb(null, "public/images");
   },
   filename: (req, res, cb) => {
-    cb(null, "macdfile" + path.extname(res.originalname));
+    cb(null, "macdfile.jpg");
   }
 });
 
@@ -21,7 +21,6 @@ const blobService = azure.createBlobService(
 );
 
 const containerName = "macdsubmission";
-const blobName = "macdsubmission";
 const fileName = `${__dirname}/../public/images/macdfile.jpg`;
 
 /* GET home page. */
